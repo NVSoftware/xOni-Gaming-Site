@@ -1,13 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
 }
-
+body {
+    background-color: black;
+}
 .page-header {
     font-family: 'Bungee', cursive;
     font-size: 3em;
-    
+    color: white;
 }
+    
 
 
 #logo {
@@ -15,45 +19,49 @@
     max-height: 110px;
     top: 35px;
     position: relative;
-    
 }
+    
 
 .platlogos {
     display: flex;
+    
+    
 }
 
-.platlogos a{
-    width: 60px;
-    height: 60px;
+.platlogos a {
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
     margin: 10px 20px;
     border-radius: 60%;
     position: relative;
     overflow: hidden;
    transition: transform 0.5s;
+   
+}
     
-}
+    
 
-.platlogos a .fa-brands{
+.platlogos a .fa-brands {
     font-size: 2em;
-    line-height: 60px;
+    line-height: 40px;
     position: relative;
     z-index: 10;
     transition: color 0.5s;
 }
 
-.platlogos a .fa-solid{
-    font-size: 2em;
-    line-height: 60px;
+.platlogos a .fa-solid {
+    font-size: 26px;
+    line-height: 40px;
     position: relative;
     z-index: 10;
     transition: color 0.5s;
 }
 
-.platlogos a::after{
+.platlogos a::after {
     content:'';
     width: 100%;
     height: 100%;
@@ -63,20 +71,52 @@
     position: absolute;
     transition: 0.5s;
 }
-.platlogos a:hover::after{
+
+.platlogos a:hover::after {
     top: 0;
 }
 
 .platlogos a:hover .fa-brands{
     color: #5fff
 }
+
 .platlogos a:hover .fa-solid{
     color: #5fff
 }
+    
 .platlogos a:hover{
     transform: translateY(-10px);
 }
 
+.featured {
+   text-align: center;
+   display: block;
+   top: 50px;
+   position: relative;
+
+}
+   
+
+#mw2pic {
+    max-width: 800px;
+    margin: 0 auto;
+    top: 12px;
+    position: relative;
+    border: 10px solid;
+    background-color: #F4D03F;
+    border-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    border-radius: 5px;
+    border-image-slice: 1;
+}
+
+.mw2 {
+    top: 25px;
+    position: relative;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 60px;
+}
+    
 
 
 
